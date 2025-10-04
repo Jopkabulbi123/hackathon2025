@@ -83,6 +83,21 @@ header {
     overflow: hidden;
 }
 
+header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background: linear-gradient(to top,
+    rgba(23, 29, 67, 0.8) 0%,
+    rgba(23, 29, 67, 0.4) 50%,
+    transparent 100%);
+    backdrop-filter: blur(10px);
+    z-index: 10;
+}
+
 header::before {
     content: '';
     position: absolute;
@@ -97,7 +112,7 @@ header::before {
 
 h1 {
     position: relative;
-    padding: 300px 50px 10px 100px;
+    padding: 270px 50px 10px 100px;
     font-size: 5.3rem;
     font-weight: bold;
     color: white;
@@ -206,12 +221,8 @@ section {
     right: 3rem;
     opacity: 0.5;
     animation: fadeInUp 1.5s ease-out;
-    transition: opacity 0.3s ease;
 }
 
-#quote:hover {
-    opacity: 0.8;
-}
 
 .button {
     display: inline-block;
@@ -257,10 +268,10 @@ section {
 }
 
 footer {
-    height: 400px;
+    height: 300px;
     background-image: url("../images/saving.png");
     position: relative;
-    bottom: 9rem;
+    margin-top: -10rem;
     display: flex;
     align-items: flex-start;
     padding-top: 2rem;
@@ -272,7 +283,6 @@ footer > p {
     text-align: right;
     position: relative;
     right: 5rem;
-    animation: fadeInUp 2s ease-out;
 }
 
 hr.divider {
@@ -282,4 +292,19 @@ hr.divider {
     margin: 3rem auto;
     width: 80%;
     animation: shimmer 3s linear infinite;
+}
+
+#languages_change{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    flex-direction: row;
+    margin: 1rem 2rem;
+}
+
+#languages_change > a{
+    color: black;
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    z-index: 200;
 }
