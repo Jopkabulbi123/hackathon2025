@@ -207,9 +207,8 @@ section {
 
 #astronaut {
     position: relative;
-    left: 5rem;
     margin: 5rem 0;
-    max-width: 40%;
+    max-width: 50%;
     filter: drop-shadow(0 10px 30px rgba(255, 208, 107, 0.3));
 }
 
@@ -230,7 +229,7 @@ section {
     font-size: 3rem;
     position: relative;
     bottom: 32rem;
-    left: 15rem;
+    left: 10rem;
     padding: 1.5rem 3rem;
     background: linear-gradient(135deg, #BF4646 0%, #D65858 100%);
     color: white;
