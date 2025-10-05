@@ -219,7 +219,7 @@ section {
 }
 
 #languages_change > a {
-    color: #FFD06B;
+    color: black;
     font-size: 1.1rem;
     font-weight: 600;
     transition: color 0.3s ease;
