@@ -106,6 +106,7 @@ h3 {
     font-family: "Play", sans-serif;
     animation: fadeInDown 1.2s ease-out;
     z-index: 20;
+    margin-bottom: 2rem;
 }
 
 p {
@@ -160,14 +161,14 @@ section {
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    margin-top: 3rem;
+    margin-top: 1rem;
     position: relative;
 }
 
 #astronaut {
     position: relative;
-    margin: 5rem 0;
-    max-width: 50%;
+    margin: 1rem 0;
+    max-width: 70%;
     filter: drop-shadow(0 10px 30px rgba(255, 208, 107, 0.3));
 }
 
@@ -181,10 +182,8 @@ section {
 }
 
 .button {
-    position: absolute;
-    top: 30%;
-    left: 65%;
-    transform: translate(-50%, -50%);
+    position: relative;
+    float: right;
     display: inline-block;
     font-size: 2.8rem;
     padding: 1.2rem 2.8rem;
@@ -194,18 +193,20 @@ section {
     font-weight: bold;
     box-shadow: 0 10px 25px rgba(191, 70, 70, 0.4);
     transition: all 0.3s ease;
-    text-align: center;
+    text-align: right;
     z-index: 30;
+    margin: 50px 250px;
+    animation: fadeInUp 1s ease-out 0.8s both;
 }
 
 .button:hover {
-    transform: translate(-50%, -50%) scale(1.05);
+    transform: scale(1.05);
     background: linear-gradient(135deg, #D65858 0%, #BF4646 100%);
     box-shadow: 0 20px 45px rgba(191, 70, 70, 0.6);
 }
 
 .button:active {
-    transform: translate(-50%, -50%) scale(0.97);
+    transform: scale(0.97);
 }
 
 #languages_change {
@@ -230,10 +231,10 @@ section {
 }
 
 footer {
-    height: 200px;
+    height: 150px;
     background-image: url("../images/saving.png");
     position: relative;
-    margin-top: -10rem;
+    margin-top: -5rem;
     display: flex;
     justify-content: space-between;
     padding-top: 2rem;
@@ -278,8 +279,7 @@ hr.divider {
 
     .button {
         font-size: 2.2rem;
-        top: 30%;
-        left: 70%;
+        margin-left: 50px;
     }
 
     #astronaut {
@@ -287,19 +287,19 @@ hr.divider {
     }
 
     footer {
-        height: 150px;
+        height: 120px;
     }
 }
 
 @media (max-width: 768px) {
     header {
-        min-height: 600px;
+        min-height: 700px;
         background-position: center;
     }
 
     h1 {
         font-size: 2.2rem;
-        padding: 100px 10px 0 10px;
+        padding: 150px 10px 0 10px;
         text-align: center;
         left: 0;
     }
@@ -312,6 +312,15 @@ hr.divider {
         padding: 0 1rem;
     }
 
+    .button {
+        margin: 1.5rem auto 0 auto;
+        font-size: 1.4rem;
+        padding: 0.9rem 1.5rem;
+        display: block;
+        text-align: center;
+        width: fit-content;
+    }
+
     .container2 {
         flex-direction: column;
         align-items: center;
@@ -321,16 +330,6 @@ hr.divider {
     #astronaut {
         max-width: 70%;
         margin: 1rem auto;
-    }
-
-    .button {
-        position: static;
-        transform: none;
-        margin: 1.5rem auto 0 auto;
-        font-size: 1.4rem;
-        padding: 0.9rem 1.5rem;
-        display: block;
-        text-align: center;
     }
 
     #languages_change {
@@ -350,6 +349,7 @@ hr.divider {
         align-items: center;
         padding: 1rem 1.5rem;
         background-size: cover;
+        height: 100px;
     }
 
     footer p {
